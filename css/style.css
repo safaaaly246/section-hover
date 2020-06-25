@@ -1,0 +1,409 @@
+
+/*---------------------------------------*/
+/* .padd{
+    margin-top: 50px;
+    margin-bottom: 50px;
+} */
+@font-face{
+    font-family:melLogo ;
+    src: url(../fonts/logomel.ttf);
+}
+span ,i{
+    display: inline-block;
+    }
+    p,h1,h4,h2{
+        text-transform: capitalize;
+
+    }
+    a:hover{
+        text-decoration: none;
+        color: #fff;
+    }
+    /* START NAV STYLE */
+    
+    .container-fluid .navContainer{
+    width: 80%;
+    /* position: fixed;
+    z-index:2000 ; */
+    }
+    
+    .bg-light{
+        background-color: #171717 !important;
+    }
+    
+    .navbar-light .navbar-nav .nav-link{
+        text-transform: uppercase;
+        font-size: 16px;
+        font-family: "Rubik",sans-serif;
+        color: #fff;
+    }
+    .navbar-light .navbar-nav .nav-link:hover{
+        color: #988a89;
+    }
+    
+    
+     
+    .navbar-brand span{
+        font-weight: bold;
+        font-family: melLogo;
+        font-size: 25px;
+        color: #fff;
+    }
+    .navbar strong{
+        text-transform: uppercase;
+        color: #fff;
+    }
+    .icon-nav{
+        display: inline-block;
+    }
+    .icon-nav i{
+        font-size: 20px;
+    
+    }
+    @media only screen and (max-width: 1200px){
+        .bg-light{
+            background-color: #fff !important;
+            
+        }
+        .navbar-light .navbar-nav .nav-link,.navbar-brand span, .navbar strong{
+           
+            color: #333;
+        }
+       .offset-4 ,.offset-1,.navbar-brand {
+           margin-left: 100px;
+       }
+       .icon-nav i{
+        margin-left: 10px;
+    
+    }
+        }
+    
+    
+    /* 
+    .navbar-scroll{
+     background: #e1e5e8;
+     color: #171717;
+     box-shadow: 0 1px 6px 0 rgba(32, 33, 36, .28);
+    
+    } */
+    /* END NAV STYLE */
+    
+    /* START HEDER STYLE */
+    .header-sec{
+        background:#171717 ;
+      color: #fff;
+    }
+    
+    
+    
+    .header-sec-contain  h1,.defintion-sec h1{
+        text-transform: capitalize;
+        font-size: 60px;
+        font-weight: bold;
+        font-family: tahoma;
+        padding: 100px 0;
+        color: #fff;
+    }
+    .header-sec-contain  h1{
+        padding-top: 260px ;
+        padding-bottom: 60px;
+       
+    }
+    .header-sec-contain ul{
+        list-style: none;
+    }
+    .header-sec-contain ul li{
+        text-decoration: none;
+    text-transform: capitalize;
+    font-size: 30px;
+    margin: 300px 0;
+    }
+    
+    /* END HEDER STYLE */
+        /*  START DEFINATION STYLE */
+
+    .defintion-sec{
+     
+        background:  url('https://melrobbins.com/wp-content/uploads/2018/03/Layer-1.jpg') no-repeat ;
+          background-size:  cover
+    }
+  
+    .defintion-sec h1,.enough-hover h1,.enough-hover-header,.fixed-sec-item h1,.cover-sec h1{
+       color: #171717;
+        padding: 100px 0;
+        font-size: 80px;
+    }
+    .defintion-sec-item{
+        background-color: #fff;
+        padding: 40px 60px ;
+        box-shadow: 0 1px 6px 0 rgba(32, 33, 36, .28);
+    padding: 200px 40px;
+    }
+    .defintion-sec-item h4{
+        font-size: 40px;
+        line-height: 3;
+    }
+    .defintion-sec-item p{
+        font-size: 30px;
+        color: #988a89;
+        font-family: serif;
+    }
+    
+    .container-inner{
+        position: relative;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 200px;
+        margin-bottom: 200px;
+        overflow: hidden;
+    }
+    .container-inner .overlay {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background-color: #171717;
+        overflow: hidden;
+        width: 100%;
+        height: 0;
+        transition: 0.5s ease;
+        z-index: 1;
+      }
+    
+      .container-inner .defintion-sec-item{
+        
+        display: flex;
+        z-index: 3;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        transition: transform .5s;
+    
+    }
+    
+    .container-inner:hover .overlay  {
+      height: 100%;
+      cursor: pointer;
+    
+    }
+    .container-inner:hover .defintion-sec-item{
+        transform: scale(1.1);
+        color: #fff;
+        background:transparent;
+       
+    }
+    
+        /*  END DEFINATION STYLE */
+      /*  START ENOUGH STYLE */
+ 
+      .enough-sec{
+        margin: 0;
+        padding: 0;
+        width: 90%;
+      }
+      .enough-hover{
+        position: relative;
+        background-color: #171717;
+        color: #fff;            
+         width: 0;
+         transition: 1s all;
+         padding: 120px 0;
+     }
+     .enough-hover h1{
+        color: #fff;
+        font-size: 80px;
+        margin-left: 200px;
+        text-align: center;
+
+    } 
+        
+        .enough-hover-header {
+            position: relative;
+            padding: 200px 0;         
+           visibility: visible;
+            left: 140px;
+            bottom: 700px;
+            color: #171717;
+        }
+        .enough-sec-item p,.mel-concept-sec-item p{
+            padding: 100px 0 200px 0;
+            font-size: 30px;
+            line-height: 1.3;
+            font-family: sans-serif;
+            width: 70%;
+            color: #988a89;
+          }
+           
+          
+        .basic-container{
+            display: none;
+        }
+
+       .basic-container-item{
+           background-color: #171717;
+           margin: 100px 0;
+           padding: 50px;
+           width: 111%;
+           transition: 1s;
+       }
+       .basic-container-header{
+        color: #fff;
+        font-size: 40px;
+       }
+       .basic-container-item:hover{
+           background-color: #fff;
+       }
+       .basic-container-item:hover  .basic-container-header{
+        color: #171717;
+    }
+     /*  END ENOUGH STYLE */
+          /*  START FIXED STYLE */
+          .fixed-sec{
+            background-image: url(../img/IMG-20200624-WA0036.jpg);
+              background-size: cover;
+              position: relative;
+              bottom: 600px;
+             height: 700px;
+             background-attachment: fixed;
+        }
+        .overlay-cover{
+            position: absolute;
+        }
+        .overlay-fixed {
+            position: absolute;
+            opacity: 0;
+            width: 100%;
+            height: 700px;
+            right: 2px;
+            display: table;
+            top: 0;
+            background-color: rgba(000,000,000,0.5);
+            text-align: center;
+        }
+        .overlay-fixed h1
+        {
+            display: table-cell;
+            vertical-align: middle;
+            font-size: 40px;
+            color: #fff;
+            font-family: cursive;
+        }
+        .fixed-sec:hover .overlay-fixed{
+            transition: 2s;
+            opacity: 1;
+        }
+        
+     /*  END FIXED STYLE */
+          /*  START MEL CONCEPT STYLE */
+          .mel-concept-sec{
+              padding-left: 0;
+              position: relative;
+              bottom: 600px;
+          }
+          .mel-concept-sec-item-img{
+            background: url("https://melrobbins.com/wp-content/uploads/2018/03/IMG_0115-3.jpg") no-repeat;
+            background-size: cover;
+            padding: 300px;
+            background-attachment: fixed;
+          }
+          /* .mel-concept-sec-item img{
+            width: 112%;
+            height: 905px;
+        } */
+        .mel-concept-sec-item h1{
+            font-weight: 700;
+            font-size: 300px;
+            line-height: 250px;
+            font-family: gothic;
+        }
+        .mel-concept-sec-item h2{
+            width: 80%;
+            font-size: 50px;
+
+        }
+        .mel-concept-sec-item p{
+            line-height: 1.8;
+            padding: 40px;
+            font-size: 24px;
+
+        }
+        .mel-concept-sec-item  .learn-more{
+            color: #fff;
+            background: #465c6e;
+            -webkit-transition: all .3s ease;
+            -o-transition: all .3s ease;
+            transition: all .3s ease;
+            padding: 16px 30px ;
+            border-radius: 30px;
+        }
+     /*  END MEL CONCEPT STYLE */
+.cover-sec{
+  background: #171717;
+/* height: 600px; */
+padding: 100px;
+position: relative;
+bottom: 500px;
+text-align: center;
+background-attachment: fixed
+}
+.cover-sec h1{
+    color: #fff;
+font-size: 60px;
+transition: .7s;
+}
+.cover-sec:hover h1{
+    color: red;
+}
+.cover-sec:hover{
+    background: #465c6e;
+}
+
+    @media (max-width: 1200px){
+        .container-inner{
+        margin-top: 0;
+        margin-bottom: 0;
+        padding: 0;
+        }
+         .offset-5{
+            margin-left: 0;
+        }
+        .enough-hover{
+            left: 0;
+        }
+        .enough-hover-header {
+        left: 0;
+        }
+        .enough-hover{
+            display: none;
+        }
+      .scroll-container{
+          display: none;
+      }
+        .navbar-light .navbar-toggler-icon{
+            background-color: transparent;
+        }
+        .navbar-toggler{
+            background-color:whitesmoke;
+        }
+        .scroll-container{
+            display: none;
+        }
+                  
+        .basic-container{
+            display: block;
+        }
+    .enough-sec-item p{
+        width: 94%;
+    }
+    .navbar{
+        background-color: whitesmoke;
+    }
+    .mel-concept-sec-item .offset-1{
+        margin-left: 44px;
+    }
+    .mel-concept-sec-item-img{
+        padding: 240px;
+    }
+    }

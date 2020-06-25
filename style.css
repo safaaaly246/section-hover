@@ -1,0 +1,105 @@
+html{
+    perspective: 400px;
+}
+a,i{
+    display: inline-block;
+}
+a:hover{
+    text-decoration: none;
+    color: #fff;
+}
+.content{
+    margin-top: 200px;
+    position: relative;
+
+}
+.container-item{
+    margin-bottom: 20px;
+}
+
+.content-item{
+ background-image: url(https://res.cloudinary.com/jamesgroup/image/upload/v1589824264/listing-slider/xth8fwjitnmtdmijh3ux.jpg);
+ width: 100%;
+ background-size: cover;
+ background-repeat: no-repeat;
+ text-align: center;
+ color: #fff;
+ text-transform: uppercase;
+ height: 400px;
+}
+
+h3{
+    font-weight: 500;
+    font-family: acumin-pro-extra-condensed,Helvetica,Roboto,Arial,sans-serif;
+    width: 100%;
+    font-size: 22px;
+    padding: 120px  0 50px 0;
+    cursor: pointer;
+    
+}
+a{
+color: #fff;
+padding: 10px 0 60px 0 ;
+font-weight: bold;
+}
+p{
+   visibility: hidden;
+}
+.fa-long-arrow-right{
+    color:#e62a7f;
+    font-size: 20px;
+    margin-left: 10px;
+}
+.overlay {
+    position: absolute;
+    height: 0;
+    width: 93%;
+    right: 2px;
+    display: flex;
+    bottom: 0;
+    background-color: #033b6f;
+    text-align: center;
+    left: 13px;
+    opacity: .8;
+
+}
+
+.content:hover .overlay{
+    transition: 2s;
+height: 100%;
+
+}
+.content:hover h3{
+ transform: translateY(-3rem);
+transition: .7s;
+padding-bottom: 20px;
+}
+.content:hover a{
+    transform: translateY(-1rem);
+   transition: 1s;
+   
+   }
+   .content:hover i{
+    transform: translateY(-1rem);
+    transition: 1s;
+
+   }
+/* .content:hover .content-item>a{
+    display: none;
+    
+} */
+.content:hover p{
+transition: 1s;
+visibility: visible;
+transform: translateY(-2rem);
+
+}
+
+@media only screen and (max-width: 1200px){
+.offset-3{
+    margin-left: 0;
+}
+.overlay{
+    width: 94%;
+}
+    }
